@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Crea tu cuenta en DR Tech." />
+    <meta name="theme-color" content="#080b12" />
+    <title>Crear cuenta | DR Tech</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../img/dr-tech-logo.png" />
+  </head>
+  <body class="register-page">
+    <div class="promo"><span>Tu próxima compra está más cerca</span><span class="promo-divider" aria-hidden="true">•</span><strong>Envío gratis desde $ 50.000</strong></div>
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" /></a>
+      <nav aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a class="nav-current" href="registro.html" aria-current="page">Crear cuenta</a></nav>
+      <a class="cart" href="finanzas.html" aria-label="Ir al carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L20.5 8H6" /><circle cx="9.5" cy="19" r="1.2" /><circle cx="17" cy="19" r="1.2" /></svg><span>Carrito</span><span class="cart-count" id="count">0</span></a>
+    </header>
+    <main>
+      <section class="contact-hero"><div class="wrap"><span class="eyebrow"><span></span> Únete a DR Tech</span><h1>Crea tu <span>cuenta.</span></h1><p>Registra tus datos para estar más cerca de tus productos favoritos.</p></div></section>
+      <section class="wrap register-section">
+        <div class="contact-form-card">
+          <span class="section-kicker">Registro de usuario</span>
+          <h2>Tus datos, protegidos en el servidor.</h2>
+          <p>La contraseña se guarda protegida con un hash seguro; no se almacena en texto legible.</p>
+          <form id="register-form">
+            <label for="register-name">Tu nombre</label>
+            <input id="register-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="name" required />
+            <label for="register-email">Tu correo</label>
+            <input id="register-email" name="email" type="email" maxlength="254" autocomplete="email" required />
+            <label for="register-password">Contraseña</label>
+            <input id="register-password" name="password" type="password" minlength="10" maxlength="128" autocomplete="new-password" aria-describedby="password-hint" required />
+            <span class="form-hint" id="password-hint">Usa al menos 10 caracteres.</span>
+            <button type="submit" class="cta">Crear cuenta <span aria-hidden="true">→</span></button>
+            <p class="register-message" id="register-message" role="status" aria-live="polite"></p>
+            <span class="form-hint">Tus datos se guardan en la base privada del servidor de DR Tech.</span>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main wrap"><div class="footer-brand"><a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" loading="lazy" /></a><p>Accesorios tecnológicos<br />para acompañar tu día.</p></div><div class="footer-column"><h2>Explora</h2><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a></div><div class="footer-column"><h2>Estamos para ayudarte</h2><a href="contacto.html">Consultas y soporte</a><a href="finanzas.html">Tu carrito</a></div><a class="back-top" href="#" aria-label="Volver al inicio">↑</a></div>
+      <div class="footer-bottom"><div class="wrap"><span>© 2026 DR Tech. Todos los derechos reservados.</span><span>Hecho para estar más cerca de ti.</span></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

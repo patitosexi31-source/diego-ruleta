@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Revisa tu carrito de compras en DR Tech." />
+    <meta name="theme-color" content="#080b12" />
+    <title>Tu carrito | DR Tech</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../img/dr-tech-logo.png" />
+  </head>
+  <body class="cart-page">
+    <div class="promo"><span>Tu próxima compra está más cerca</span><span class="promo-divider" aria-hidden="true">•</span><strong>Envío gratis desde $ 50.000</strong></div>
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" /></a>
+      <nav aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a href="registro.html">Crear cuenta</a></nav>
+      <a class="cart nav-current" href="finanzas.html" aria-label="Ir al carrito" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L20.5 8H6" /><circle cx="9.5" cy="19" r="1.2" /><circle cx="17" cy="19" r="1.2" /></svg><span>Carrito</span><span class="cart-count" id="count">0</span></a>
+    </header>
+
+    <main class="wrap cart-main">
+      <div class="cart-page-heading"><div><span class="section-kicker">Tu selección</span><h1>Tu carrito<span id="cart-heading-count"></span></h1><p>Revisa tus productos antes de continuar.</p></div><a class="section-link" href="produtos.html"><span aria-hidden="true">←</span> Seguir explorando</a></div>
+      <div class="cart-layout">
+        <section class="cart-items-panel" aria-labelledby="cart-items-title">
+          <h2 id="cart-items-title">Productos agregados</h2>
+          <div id="cart-items" class="cart-items"></div>
+          <div id="empty-cart" class="empty-cart" hidden>
+            <span class="empty-cart-icon" aria-hidden="true">⌑</span>
+            <h3>Tu carrito te está esperando.</h3>
+            <p>Cuando encuentres algo que te guste, agrégalo aquí.</p>
+            <a class="cta" href="produtos.html">Explorar productos <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Resumen de compra</h2>
+          <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">$ 0</strong></div>
+          <div class="summary-line"><span>Envío</span><strong id="cart-shipping">A calcular</strong></div>
+          <p class="shipping-hint" id="shipping-hint"></p>
+          <div class="shipping-progress">
+            <div class="shipping-progress-label"><span id="shipping-progress-label"></span><strong id="shipping-progress-amount">0%</strong></div>
+            <progress id="shipping-progress" value="0" max="50000" aria-label="Progreso hacia el envío gratis"></progress>
+          </div>
+          <div class="summary-total"><span>Total</span><strong id="cart-total">$ 0</strong></div>
+          <button class="cta checkout-button" id="checkout-button" type="button" disabled>Confirmar pedido <span aria-hidden="true">→</span></button>
+          <p class="checkout-note">El pedido se registra y descuenta del stock disponible. No se procesa ningún pago en esta página.</p>
+          <div class="secure-note"><span aria-hidden="true">◇</span> No se solicitan datos personales al confirmar este pedido.</div>
+        </aside>
+      </div>
+      <section class="cart-benefits">
+        <article><span aria-hidden="true">↗</span><div><h2>Envíos a todo el país</h2><p>Consulta el costo en tu pedido.</p></div></article>
+        <article><span aria-hidden="true">♡</span><div><h2>¿Necesitas ayuda?</h2><p><a href="contacto.html">Estamos para asesorarte.</a></p></div></article>
+        <article><span aria-hidden="true">✦</span><div><h2>Selección DR Tech</h2><p>Accesorios elegidos para tu rutina.</p></div></article>
+      </section>
+
+      <section class="finance-section admin-finance-section" id="analisis-financiero" aria-labelledby="finance-title">
+        <div class="finance-heading">
+          <span class="section-kicker">Área de administración</span>
+          <h2 id="finance-title">Finanzas de DR Tech</h2>
+          <p>Inicia sesión para consultar los costos, precios y proyecciones financieras.</p>
+        </div>
+        <div class="admin-login-panel" id="admin-login-panel">
+          <form id="admin-login-form" class="admin-login-form">
+            <label for="admin-username">Usuario</label>
+            <input id="admin-username" name="username" type="text" autocomplete="username" required />
+            <label for="admin-password">Contraseña</label>
+            <input id="admin-password" name="password" type="password" autocomplete="current-password" required />
+            <button class="cta" type="submit">Ingresar</button>
+            <p class="admin-login-message" id="admin-login-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="admin-finances" id="admin-finances" hidden></div>
+        <button class="cta cta-outline admin-logout" id="admin-logout" type="button" hidden>Cerrar sesión</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main wrap"><div class="footer-brand"><a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" loading="lazy" /></a><p>Accesorios tecnológicos<br />para acompañar tu día.</p></div><div class="footer-column"><h2>Explora</h2><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a></div><div class="footer-column"><h2>Estamos para ayudarte</h2><a href="contacto.html">Consultas y soporte</a><a href="mailto:contacto@drtech.com">contacto@drtech.com</a><span>Lunes a viernes · 9 a 18 h</span></div><a class="back-top" href="#" aria-label="Volver al inicio">↑</a></div>
+      <div class="footer-bottom"><div class="wrap"><span>© 2026 DR Tech. Todos los derechos reservados.</span><span>Hecho para estar más cerca de ti.</span></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

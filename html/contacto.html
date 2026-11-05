@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-419">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contacta a DR Tech. Escríbenos tus preguntas sobre productos, compras y accesorios tecnológicos." />
+    <meta name="theme-color" content="#080b12" />
+    <title>Contacto | DR Tech</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/png" href="../img/dr-tech-logo.png" />
+  </head>
+  <body class="contact-page">
+    <div class="promo"><span>Tu próxima compra está más cerca</span><span class="promo-divider" aria-hidden="true">•</span><strong>Envío gratis desde $ 50.000</strong></div>
+    <header class="header wrap">
+      <a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" /></a>
+      <nav aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a><a class="nav-current" href="contacto.html" aria-current="page">Contacto</a><a href="registro.html">Crear cuenta</a></nav>
+      <a class="cart" href="finanzas.html" aria-label="Ir al carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L20.5 8H6" /><circle cx="9.5" cy="19" r="1.2" /><circle cx="17" cy="19" r="1.2" /></svg><span>Carrito</span><span class="cart-count" id="count">0</span></a>
+    </header>
+
+    <main>
+      <section class="contact-hero"><div class="wrap"><span class="eyebrow"><span></span> Estamos para ayudarte</span><h1>Hablemos de lo que<br /><span>necesitas.</span></h1><p>¿Tienes alguna consulta sobre un producto o necesitas ayuda? Escríbenos y cuéntanos cómo podemos asistirte.</p></div></section>
+      <section class="wrap contact-layout">
+        <div class="contact-details">
+          <span class="section-kicker">Contacto directo</span>
+          <h2>Estamos a un mensaje de distancia.</h2>
+          <p>Elige el medio que te sea más cómodo. Puedes llamarnos o escribirnos por email.</p>
+          <a class="contact-method" href="tel:+56935598275">
+            <span class="contact-method-icon" aria-hidden="true">☎</span>
+            <span><small>Llámanos</small><strong>+56 9 3559 8275</strong></span>
+            <span class="contact-method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-method" href="mailto:contacto@drtech.com">
+            <span class="contact-method-icon" aria-hidden="true">@</span>
+            <span><small>Escríbenos</small><strong>contacto@drtech.com</strong></span>
+            <span class="contact-method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="contact-hours"><span aria-hidden="true">◷</span><p><strong>Atención online</strong><br />De lunes a viernes, de 9 a 18 h.</p></div>
+          <div class="contact-note"><span aria-hidden="true">✦</span><p>Cuéntanos qué dispositivo tienes y qué estás buscando para poder orientarte mejor.</p></div>
+        </div>
+        <div class="contact-form-card">
+          <span class="section-kicker">Déjanos tu consulta</span>
+          <h2>¿En qué podemos ayudarte?</h2>
+          <p>Completa el formulario. Se abrirá tu aplicación de correo para que puedas enviar el mensaje.</p>
+          <form id="contact-form">
+            <label for="contact-name">Tu nombre</label>
+            <input id="contact-name" name="nombre" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" required />
+            <label for="contact-email">Tu email</label>
+            <input id="contact-email" name="email" type="email" placeholder="nombre@correo.com" autocomplete="email" required />
+            <label for="contact-subject">¿Sobre qué nos escribes?</label>
+            <select id="contact-subject" name="asunto" required>
+              <option value="" disabled selected>Elige un tema</option>
+              <option>Consulta sobre un producto</option><option>Ayuda con una compra</option><option>Envíos y entregas</option><option>Otra consulta</option>
+            </select>
+            <label for="contact-message">Tu mensaje</label>
+            <textarea id="contact-message" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+            <button type="submit" class="cta">Preparar correo <span aria-hidden="true">→</span></button>
+            <span class="form-hint">El formulario no almacena tus datos en este sitio.</span>
+          </form>
+        </div>
+      </section>
+      <section class="wrap faq-section" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <span class="section-kicker">Respuestas rápidas</span>
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>¿Cómo puedo realizar un pedido?</summary>
+            <p>Agrega los productos que te interesan al carrito y selecciona “Continuar por correo”. Se abrirá tu aplicación de correo con los detalles para consultar disponibilidad y entrega.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto cuesta el envío?</summary>
+            <p>Las compras desde $ 50.000 tienen envío gratis. Para pedidos menores, el costo se coordina por correo.</p>
+          </details>
+          <details>
+            <summary>¿Puedo pagar desde esta página?</summary>
+            <p>No. DR Tech es una tienda de demostración: el pedido se prepara por correo y no se procesa ningún pago en este sitio.</p>
+          </details>
+        </div>
+      </section>
+      <section class="contact-bottom"><div class="wrap"><div><span class="section-kicker">Mientras tanto</span><h2>¿Ya encontraste algo que te guste?</h2><p>Explora los accesorios y descubre tus nuevos favoritos.</p></div><a class="cta" href="produtos.html">Ver productos <span aria-hidden="true">→</span></a></div></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main wrap"><div class="footer-brand"><a class="brand" href="index.html" aria-label="DR Tech, inicio"><img class="brand-logo" src="../img/dr-tech-logo.png" alt="DR Tech" loading="lazy" /></a><p>Accesorios tecnológicos<br />para acompañar tu día.</p></div><div class="footer-column"><h2>Explora</h2><a href="index.html">Inicio</a><a href="produtos.html">Productos</a><a href="nosotros.html">Nosotros</a></div><div class="footer-column"><h2>Estamos para ayudarte</h2><a href="mailto:contacto@drtech.com">contacto@drtech.com</a><a href="finanzas.html">Tu carrito</a><span>Lunes a viernes · 9 a 18 h</span></div><a class="back-top" href="#" aria-label="Volver al inicio">↑</a></div>
+      <div class="footer-bottom"><div class="wrap"><span>© 2026 DR Tech. Todos los derechos reservados.</span><span>Hecho para estar más cerca de ti.</span></div></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
